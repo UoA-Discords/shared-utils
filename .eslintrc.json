@@ -5,6 +5,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "linebreak-style": "off",
     "prettier/prettier": "error",
     "quotes": ["error", "backtick"],
     "max-len": [
