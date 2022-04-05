@@ -1,0 +1,27 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "quotes": ["error", "backtick"],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true
+    }
+    ],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "require-await": "error",
+    "@typescript-eslint/no-dupe-class-members": ["error"],
+    "@typescript-eslint/explicit-member-accessibility": ["error", { "accessibility": "explicit" }],
+    "@typescript-eslint/explicit-module-boundary-types": ["error"],
+    "@typescript-eslint/no-inferrable-types": ["error", { "ignoreParameters": true }]
+  },
+  "plugins": ["@typescript-eslint", "prettier"]
+}
