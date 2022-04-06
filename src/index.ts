@@ -1,6 +1,14 @@
 import { DiscordAPI, ServerAPI } from './APIs';
 import { Tags } from './Data';
-import { AccessTokenResponse, NSFWLevels, VerificationLevels, GuildFeatures, Guild, Invite } from './DiscordTypes';
+import {
+    AccessTokenResponse,
+    NSFWLevels,
+    VerificationLevels,
+    GuildFeatures,
+    Guild,
+    Invite,
+    User,
+} from './DiscordTypes';
 import { Tag, APIResponse } from './Types';
 
 export {
@@ -13,6 +21,7 @@ export {
     GuildFeatures,
     Guild,
     Invite,
+    User,
     Tag,
     APIResponse,
 };
