@@ -20,7 +20,7 @@ export default class ServerAPI {
         try {
             const { status, statusText, data } = await this._server.post<AccessTokenResponse>(`/auth/getToken`, {
                 code,
-                redirect_uri: window.location.origin,
+                redirect_uri: window.location.origin + `/auth`,
             });
 
             if (status !== 200) {
