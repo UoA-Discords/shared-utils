@@ -19,7 +19,9 @@
         "test": "jest --no-cache --runInBand",
         "test:cov": "jest --coverage --no-cache --runInBand",
         "addscope": "node tools/packagejson name @uoa-discords/shared-utils",
-        "lint": "eslint --ext .ts src --max-warnings=0"
+        "lint": "eslint --ext .ts src --max-warnings=0",
+        "typecheck": "tsc --noEmit",
+        "check-all": "yarn test && yarn lint && yarn typecheck"
     },
     "publishConfig": {
         "access": "public"
