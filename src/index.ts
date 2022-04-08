@@ -11,7 +11,14 @@ import {
     User,
     AnonymousUser,
 } from './DiscordTypes';
-import { Tag, APIResponse, RegisteredGuild, WebApplicationBody, BotApplicationBody } from './Types';
+import {
+    Tag,
+    APIResponse,
+    RegisteredGuild,
+    WebApplicationBody,
+    BotApplicationBody,
+    ApplicationResponses,
+} from './Types';
 
 export {
     DiscordAPI,
@@ -31,4 +38,5 @@ export {
     RegisteredGuild,
     WebApplicationBody,
     BotApplicationBody,
+    ApplicationResponses,
 };
