@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosInstance } from 'axios';
 import { Invite } from '../DiscordTypes';
-import User from '../DiscordTypes/User';
+import { User } from '../DiscordTypes/User';
 import APIResponse from '../Types/APIResponse';
 
 export default abstract class DiscordAPI {

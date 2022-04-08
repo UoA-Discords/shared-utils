@@ -1,4 +1,4 @@
-import { DiscordAPI, ServerAPI } from './APIs';
+import { DiscordAPI } from './APIs';
 import { Tags } from './Data';
 import {
     AccessTokenResponse,
@@ -7,13 +7,14 @@ import {
     GuildFeatures,
     Guild,
     Invite,
+    AnonymousInvite,
     User,
+    AnonymousUser,
 } from './DiscordTypes';
-import { Tag, APIResponse } from './Types';
+import { Tag, APIResponse, RegisteredGuild, WebApplicationBody, BotApplicationBody } from './Types';
 
 export {
     DiscordAPI,
-    ServerAPI,
     Tags,
     AccessTokenResponse,
     NSFWLevels,
@@ -21,7 +22,12 @@ export {
     GuildFeatures,
     Guild,
     Invite,
+    AnonymousInvite,
     User,
+    AnonymousUser,
     Tag,
     APIResponse,
+    RegisteredGuild,
+    WebApplicationBody,
+    BotApplicationBody,
 };

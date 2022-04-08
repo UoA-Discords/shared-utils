@@ -14,6 +14,11 @@ interface FailedResponse extends BaseResponse {
     error: AxiosError;
 }
 
+/** An object returned by an API request.
+ *
+ * A successful response has a `data` field, while an unsuccessful one
+ * has an `error` field. These requests should never throw an error.
+ */
 type APIResponse<T> = SuccessfulResponse<T> | FailedResponse;
 
 export default APIResponse;
