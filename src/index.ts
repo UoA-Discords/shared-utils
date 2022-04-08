@@ -1,4 +1,4 @@
-import { DiscordAPI } from './APIs';
+import { DiscordAPI, HelperAPI } from './APIs';
 import { Tags } from './Data';
 import {
     AccessTokenResponse,
@@ -15,6 +15,7 @@ import { Tag, APIResponse, RegisteredGuild, WebApplicationBody, BotApplicationBo
 
 export {
     DiscordAPI,
+    HelperAPI,
     Tags,
     AccessTokenResponse,
     NSFWLevels,
