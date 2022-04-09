@@ -1,3 +1,4 @@
+import { Invite } from '../DiscordTypes';
 import { ApplicationResponses } from '../Types';
 import DiscordAPI from './DiscordAPI';
 
@@ -8,7 +9,7 @@ export default abstract class HelperAPI {
      *
      * @param {string} inviteUrl - Invite code (e.g. `abc123`).
      */
-    public static async verifyInvite(inviteUrl: string): Promise<true | VerifyInviteResponse> {
+    public static async verifyInvite(inviteUrl: string): Promise<Invite | VerifyInviteResponse> {
         const invite = await DiscordAPI.getInviteData(inviteUrl);
         if (!invite.success) return ApplicationResponses.Invalid;
 
@@ -16,6 +17,6 @@ export default abstract class HelperAPI {
 
         if (invite.data.approximate_member_count < 100) return ApplicationResponses.TooSmall;
 
-        return true;
+        return invite.data;
     }
 }
