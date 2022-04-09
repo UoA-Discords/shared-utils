@@ -10,8 +10,11 @@ enum ApplicationResponses {
     /** The invite URL provided was syntactically invalid. */
     Invalid,
 
-    /** Verified invite, but the user is not an admin in this guild. */
-    NotAdmin,
+    /** Verified invite, but this guild does not have enough members. */
+    TooSmall,
+
+    /** Verified invite, but it has an expiry date. */
+    Expires,
 
     /** Verified invite, but this guild already exists in the registry. */
     AlreadyRegistered,
