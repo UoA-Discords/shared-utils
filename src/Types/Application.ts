@@ -1,12 +1,17 @@
 import { AnonymousInvite, AnonymousUser, User } from '../DiscordTypes';
 import Tag from './Tag';
 
+/**
+ * Standard registered guild as seen on the frontend.
+ *
+ * Backend should not use anonymous data.
+ */
 export interface RegisteredGuild {
     guildId: string;
-    addedVia: `web` | `bot`;
-    appliedAt: number;
     inviteObject: AnonymousInvite;
     tags: Tag[];
+    addedVia: `web` | `bot`;
+    appliedAt: number;
     addedBy: AnonymousUser;
     approvedBy: AnonymousUser;
     approvedAt: number;
@@ -29,4 +34,8 @@ export interface BotApplicationBody {
 
     /** The user this bot is making the application on behalf of. */
     user: User;
+
+    inviteURL: string;
+
+    tags: Tag[];
 }
