@@ -1,5 +1,5 @@
 import { DiscordAPI, HelperAPI } from './APIs';
-import { Tags, TagNames, Developers, Verifiers } from './Data';
+import { Tags, TagNames, Developers, Verifiers, BlacklistedGuilds, OptOutGuilds } from './Data';
 import {
     AccessTokenResponse,
     NSFWLevels,
@@ -11,7 +11,7 @@ import {
     User,
     AnonymousUser,
 } from './DiscordTypes';
-import { APIResponse, RegisteredGuild, WebApplicationBody, BotApplicationBody } from './Types';
+import { APIResponse, PublicRegisteredGuild, WebApplicationBody, BotApplicationBody } from './Types';
 
 export {
     DiscordAPI,
@@ -20,6 +20,8 @@ export {
     TagNames,
     Developers,
     Verifiers,
+    BlacklistedGuilds,
+    OptOutGuilds,
     AccessTokenResponse,
     NSFWLevels,
     VerificationLevels,
@@ -30,7 +32,7 @@ export {
     User,
     AnonymousUser,
     APIResponse,
-    RegisteredGuild,
+    PublicRegisteredGuild,
     WebApplicationBody,
     BotApplicationBody,
 };
