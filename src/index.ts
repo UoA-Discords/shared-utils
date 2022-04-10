@@ -1,5 +1,5 @@
 import { DiscordAPI, HelperAPI } from './APIs';
-import { Tags, TagNames } from './Data';
+import { Tags, TagNames, Developers, Verifiers } from './Data';
 import {
     AccessTokenResponse,
     NSFWLevels,
@@ -18,6 +18,8 @@ export {
     HelperAPI,
     Tags,
     TagNames,
+    Developers,
+    Verifiers,
     AccessTokenResponse,
     NSFWLevels,
     VerificationLevels,
