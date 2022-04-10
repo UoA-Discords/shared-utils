@@ -1,5 +1,3 @@
-import Tag from '../Types/Tag';
-
 /** Use these to index the {@link Tags} object. */
 export enum TagNames {
     Arts,
@@ -17,7 +15,7 @@ export enum TagNames {
 }
 
 /** Maps tag indexes to their name and description. */
-const Tags: Record<TagNames, Tag> = {
+export const Tags: Record<TagNames, { name: string; description: string }> = {
     [TagNames.Arts]: {
         name: `Arts`,
         description: `Faculty of Arts`,
@@ -67,5 +65,3 @@ const Tags: Record<TagNames, Tag> = {
         description: `School of Computer Science`,
     },
 };
-
-export default Tags;

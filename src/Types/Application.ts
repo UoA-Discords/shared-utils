@@ -1,5 +1,5 @@
+import { TagNames } from '../Data';
 import { AnonymousInvite, AnonymousUser, User } from '../DiscordTypes';
-import Tag from './Tag';
 
 /**
  * Standard registered guild as seen on the frontend.
@@ -9,7 +9,7 @@ import Tag from './Tag';
 export interface RegisteredGuild {
     guildId: string;
     inviteObject: AnonymousInvite;
-    tags: Tag[];
+    tags: TagNames[];
     addedVia: `web` | `bot`;
     appliedAt: number;
     addedBy: AnonymousUser;
@@ -21,7 +21,7 @@ export interface RegisteredGuild {
 export interface WebApplicationBody {
     inviteURL: string;
     access_token: string;
-    tags: Tag[];
+    tags: TagNames[];
 }
 
 /** Guild registry applications submitted via a bot must have this in their request body. */
@@ -37,5 +37,5 @@ export interface BotApplicationBody {
 
     inviteURL: string;
 
-    tags: Tag[];
+    tags: TagNames[];
 }

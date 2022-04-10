@@ -1,5 +1,5 @@
 import { DiscordAPI, HelperAPI } from './APIs';
-import { Tags } from './Data';
+import { Tags, TagNames } from './Data';
 import {
     AccessTokenResponse,
     NSFWLevels,
@@ -11,19 +11,13 @@ import {
     User,
     AnonymousUser,
 } from './DiscordTypes';
-import {
-    Tag,
-    APIResponse,
-    RegisteredGuild,
-    WebApplicationBody,
-    BotApplicationBody,
-    ApplicationResponses,
-} from './Types';
+import { APIResponse, RegisteredGuild, WebApplicationBody, BotApplicationBody, ApplicationResponses } from './Types';
 
 export {
     DiscordAPI,
     HelperAPI,
     Tags,
+    TagNames,
     AccessTokenResponse,
     NSFWLevels,
     VerificationLevels,
@@ -33,7 +27,6 @@ export {
     AnonymousInvite,
     User,
     AnonymousUser,
-    Tag,
     APIResponse,
     RegisteredGuild,
     WebApplicationBody,

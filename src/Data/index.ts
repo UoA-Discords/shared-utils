@@ -1,3 +1,3 @@
-import Tags from './Tags';
+import { Tags, TagNames } from './Tags';
 
-export { Tags };
+export { Tags, TagNames };
