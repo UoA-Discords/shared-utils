@@ -10,19 +10,22 @@ enum ApplicationResponses {
     /** The invite URL provided was syntactically invalid. */
     Invalid,
 
-    /** Verified invite, but this guild does not have enough members. */
+    /** The user is not in this guild. */
+    NotIn,
+
+    /** This guild does not have enough members. */
     TooSmall,
 
-    /** Verified invite, but it has an expiry date. */
+    /** The invite has an expiry date. */
     Expires,
 
-    /** Verified invite, but this guild already exists in the registry. */
+    /** This guild already exists in the registry. */
     AlreadyRegistered,
 
-    /** Verified invite, but this guild has been blacklisted from the registry. */
+    /** This guild has been blacklisted from the registry. */
     Blacklisted,
 
-    /** Verified invite, but this guild has chosen to opt-out of the registry. */
+    /** This guild has chosen to opt-out of the registry. */
     OptOut,
 
     /** Verified invite and guild meets all conditions for application. */
