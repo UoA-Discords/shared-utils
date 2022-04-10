@@ -7,8 +7,7 @@ import { AnonymousInvite, AnonymousUser, User } from '../DiscordTypes';
  * Backend should not use anonymous data.
  */
 export interface RegisteredGuild {
-    /** Guild ID. */
-    _id: string;
+    guildId: string;
     inviteObject: AnonymousInvite;
     tags: TagNames[];
     addedVia: `web` | `bot`;
