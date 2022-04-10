@@ -1,5 +1,6 @@
 import axios, { AxiosError, AxiosInstance } from 'axios';
 import { Invite } from '../DiscordTypes';
+import { PartialGuild } from '../DiscordTypes/Guild';
 import { User } from '../DiscordTypes/User';
 import APIResponse from '../Types/APIResponse';
 
@@ -40,6 +41,27 @@ export default abstract class DiscordAPI {
 
             if (status !== 200) {
                 console.warn(`Got status code ${status} trying to get user info with messge: ${statusText}`, data);
+            }
+
+            return { success: true, data };
+        } catch (error) {
+            return {
+                success: false,
+                error: error as Error as AxiosError,
+            };
+        }
+    }
+
+    public static async getUserGuilds(access_token: string): Promise<APIResponse<PartialGuild[]>> {
+        try {
+            const { status, statusText, data } = await this._discord.get<PartialGuild[]>(`/users/@me/guilds`, {
+                headers: {
+                    Authorization: `Bearer ${access_token}`,
+                },
+            });
+
+            if (status !== 200) {
+                console.warn(`Got status code ${status} trying to get user guilds with messge: ${statusText}`, data);
             }
 
             return { success: true, data };
