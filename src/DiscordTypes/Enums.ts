@@ -24,7 +24,7 @@ export enum NSFWLevels {
     AGE_RESTRICED,
 }
 
-/** {@link https://discord.com/developers/docs/resources/guild#guild-object-guild-features features} of a guild. */
+/** {@link https://discord.com/developers/docs/resources/guild#guild-object-guild-features Features} of a guild. */
 export enum GuildFeatures {
     /** Guild has access to set an animated guild banner image. */
     ANIMATED_BANNER = `ANIMATED_BANNER`,
