@@ -19,7 +19,7 @@ export interface RegisteredGuild {
 
 /** Guild registry applications submitted via the website must have this in their request body. */
 export interface WebApplicationBody {
-    inviteURL: string;
+    inviteCode: string;
     access_token: string;
     tags: TagNames[];
 }
@@ -35,7 +35,7 @@ export interface BotApplicationBody {
     /** The user this bot is making the application on behalf of. */
     user: User;
 
-    inviteURL: string;
+    inviteCode: string;
 
     tags: TagNames[];
 }
