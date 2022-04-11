@@ -1,4 +1,5 @@
 import APIResponse from './APIResponse';
-import { PublicRegisteredGuild, WebApplicationBody, BotApplicationBody } from './Application';
+import { WebApplication, BotApplication } from './Applications';
+import PublicRegisteredGuild from './RegisteredGuild';
 
-export { APIResponse, PublicRegisteredGuild, WebApplicationBody, BotApplicationBody };
+export { APIResponse, PublicRegisteredGuild, WebApplication, BotApplication };

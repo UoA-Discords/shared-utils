@@ -6,12 +6,11 @@ import {
     VerificationLevels,
     GuildFeatures,
     Guild,
+    PartialGuild,
     Invite,
-    AnonymousInvite,
     User,
-    AnonymousUser,
 } from './DiscordTypes';
-import { APIResponse, PublicRegisteredGuild, WebApplicationBody, BotApplicationBody } from './Types';
+import { APIResponse, PublicRegisteredGuild, WebApplication, BotApplication } from './Types';
 
 export {
     DiscordAPI,
@@ -27,12 +26,11 @@ export {
     VerificationLevels,
     GuildFeatures,
     Guild,
+    PartialGuild,
     Invite,
-    AnonymousInvite,
     User,
-    AnonymousUser,
     APIResponse,
     PublicRegisteredGuild,
-    WebApplicationBody,
-    BotApplicationBody,
+    WebApplication,
+    BotApplication,
 };

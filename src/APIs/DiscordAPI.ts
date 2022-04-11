@@ -1,7 +1,5 @@
 import axios, { AxiosError, AxiosInstance } from 'axios';
-import { Invite } from '../DiscordTypes';
-import { PartialGuild } from '../DiscordTypes/Guild';
-import { User } from '../DiscordTypes/User';
+import { Invite, User, PartialGuild } from '../DiscordTypes';
 import APIResponse from '../Types/APIResponse';
 
 /** Handles making calls to the Discord API for both client and server. */

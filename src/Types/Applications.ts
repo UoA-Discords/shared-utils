@@ -1,31 +1,15 @@
 import { TagNames } from '../Data';
-import { AnonymousInvite, AnonymousUser, User } from '../DiscordTypes';
-
-/**
- * Standard registered guild as seen on the frontend.
- *
- * Backend should not use anonymous data.
- */
-export interface PublicRegisteredGuild {
-    guildId: string;
-    inviteObject: AnonymousInvite;
-    tags: TagNames[];
-    addedVia: `web` | `bot`;
-    appliedAt: number;
-    addedBy: AnonymousUser;
-    approvedBy: AnonymousUser;
-    approvedAt: number;
-}
+import { User } from '../DiscordTypes';
 
 /** Guild registry applications submitted via the website must have this in their request body. */
-export interface WebApplicationBody {
+export interface WebApplication {
     inviteCode: string;
     access_token: string;
     tags: TagNames[];
 }
 
 /** Guild registry applications submitted via a bot must have this in their request body. */
-export interface BotApplicationBody {
+export interface BotApplication {
     /** Discord ID Snowflake for the bot. */
     botId: string;
 

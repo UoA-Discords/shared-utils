@@ -5,7 +5,7 @@ import { GuildFeatures, NSFWLevels, VerificationLevels } from './Enums';
  *
  * {@link https://discord.com/developers/docs/resources/guild#guild-object API Reference}
  */
-export default interface Guild {
+export interface Guild {
     id: string;
 
     name: string;

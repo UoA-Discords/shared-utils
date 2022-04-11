@@ -1,11 +1,14 @@
 /**
- * {@link User} object given to client by server.
+ * Discord user.
  *
- * Excludes information like:
- * - ID
- * - Discriminator
+ * {@link https://discord.com/developers/docs/resources/user#user-object API Reference}
  */
-export interface AnonymousUser {
+export default interface User {
+    id: string;
+
+    /** E.g. '1234' */
+    discriminator: string;
+
     /** E.g. 'NachoToast'. */
     username: string;
 
@@ -14,16 +17,4 @@ export interface AnonymousUser {
 
     /** @see {@link https://discord.com/developers/docs/resources/user#user-object-user-flags} */
     public_flags: number;
-}
-
-/**
- * Discord user
- *
- * {@link https://discord.com/developers/docs/resources/user#user-object API Reference}
- */
-export interface User extends AnonymousUser {
-    id: string;
-
-    /** E.g. '1234' */
-    discriminator: string;
 }

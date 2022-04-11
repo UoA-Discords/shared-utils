@@ -1,12 +1,14 @@
-import Guild from './Guild';
-import { AnonymousUser, User } from './User';
+import { Guild } from './Guild';
+import User from './User';
 
 /**
- * {@link Invite} object given to client by server.
+ * Invite object.
  *
- * Inviter, if present, is an {@link AnonymousUser}.
+ * Assumes `with_counts` and `with_expiration` are both `true`.
+ *
+ * {@link https://discord.com/developers/docs/resources/invite#invite-object API Reference}
  */
-export interface AnonymousInvite {
+export default interface Invite {
     /** The invite code (unique ID), e.g. 'https://discord.gg/abcdefg' has code 'abcdefg'. */
     code: string;
 
@@ -19,7 +21,7 @@ export interface AnonymousInvite {
         type: number;
     } | null;
 
-    inviter?: AnonymousUser;
+    inviter?: User;
 
     target_type: number;
 
@@ -40,15 +42,4 @@ export interface AnonymousInvite {
      * @example '2022-04-07T03:52:22+00:00'
      */
     expires_at: string | null;
-}
-
-/**
- * Invite object.
- *
- * Assumes `with_counts` and `with_expiration` are both `true`.
- *
- * {@link https://discord.com/developers/docs/resources/invite#invite-object API Reference}
- */
-export interface Invite extends AnonymousInvite {
-    inviter?: User;
 }
