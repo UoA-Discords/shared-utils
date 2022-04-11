@@ -1,10 +1,9 @@
-import Developers from './Developers';
-
 /** Set of Discord IDs of users that are guild verifiers. */
 const Verifiers = new Set<string>([
-    ...Developers,
-    // for now this is just the developers, but we should
-    // eventually have non-developing verifiers too
+    `240312568273436674`, // NachoToast
+    `135846971800944641`, // Tukib
+    `232254618434797570`, // Kwii
+    `225708387558490112`, // Singularity
 ]);
 
 export default Verifiers;
