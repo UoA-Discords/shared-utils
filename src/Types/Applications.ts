@@ -1,25 +1,25 @@
 import { TagNames } from '../Data';
 import { User } from '../DiscordTypes';
 
-/** Guild registry applications submitted via the website must have this in their request body. */
 export interface WebApplication {
+    /** Code for the invite, not the full URL. */
     inviteCode: string;
-    access_token: string;
+
+    /**
+     * For users this will be their Discord OAuth access token.
+     *
+     * For bots this will be their UoA Discords API token.
+     */
+    authToken: string;
+
     tags: TagNames[];
+
+    /** If false, will not actually add the application. */
+    dryRun?: boolean;
 }
 
 /** Guild registry applications submitted via a bot must have this in their request body. */
-export interface BotApplication {
-    /** Discord ID Snowflake for the bot. */
-    botId: string;
-
-    /** The bot's API token to the API (NOT the Discord API). */
-    api_token: string;
-
+export interface BotApplication extends WebApplication {
     /** The user this bot is making the application on behalf of. */
     user: User;
-
-    inviteCode: string;
-
-    tags: TagNames[];
 }
