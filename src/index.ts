@@ -1,4 +1,4 @@
-import { DiscordAPI, HelperAPI } from './APIs';
+import { DiscordAPI } from './APIs';
 import { Tags, TagNames, Developers, Verifiers, BlacklistedGuilds, OptOutGuilds } from './Data';
 import {
     AccessTokenResponse,
@@ -14,7 +14,6 @@ import { APIResponse, PublicRegisteredGuild, WebApplication, BotApplication } fr
 
 export {
     DiscordAPI,
-    HelperAPI,
     Tags,
     TagNames,
     Developers,
