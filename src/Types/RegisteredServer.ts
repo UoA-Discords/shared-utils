@@ -1,7 +1,7 @@
 import { TagNames } from '../Data';
 import { User } from '../DiscordTypes';
 
-export default interface RegisteredServer {
+interface RegisteredServerBase {
     inviteCode: string;
     tags: TagNames[];
     addedVia: `web` | `bot`;
@@ -19,3 +19,16 @@ export default interface RegisteredServer {
      */
     memberCountHistory: number[];
 }
+
+export interface WebRegisteredServer extends RegisteredServerBase {
+    addedVia: `web`;
+}
+
+export interface BotRegisteredServer extends RegisteredServerBase {
+    addedVia: `bot`;
+    bot: User;
+}
+
+type RegisteredServer = WebRegisteredServer | BotRegisteredServer;
+
+export default RegisteredServer;
