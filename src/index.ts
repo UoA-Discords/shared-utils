@@ -1,6 +1,52 @@
 import { DiscordAPI } from './APIs';
-import * as Data from './Data';
-import * as Discord from './DiscordTypes';
-import * as Types from './Types';
+import { TagDescriptionsMap, TagNames, Developers, Verifiers, BlacklistedGuilds, OptOutGuilds } from './Data';
+import {
+    AccessTokenResponse,
+    NSFWLevels,
+    VerificationLevels,
+    GuildFeatures,
+    Guild,
+    PartialGuild,
+    Invite,
+    User,
+} from './DiscordTypes';
+import {
+    APIResponse,
+    RegisteredServer,
+    WebApplicationRequest,
+    BotApplicationRequest,
+    AcceptApplicationRequest,
+    RejectApplicationRequest,
+    ModifyApplicationRequest,
+    GetTokenRequest,
+    RefreshTokenRequest,
+    RevokeTokenRequest,
+} from './Types';
 
-export { DiscordAPI, Data, Discord, Types };
+export {
+    DiscordAPI,
+    TagDescriptionsMap,
+    TagNames,
+    Developers,
+    Verifiers,
+    BlacklistedGuilds,
+    OptOutGuilds,
+    AccessTokenResponse,
+    NSFWLevels,
+    VerificationLevels,
+    GuildFeatures,
+    Guild,
+    PartialGuild,
+    Invite,
+    User,
+    APIResponse,
+    RegisteredServer,
+    WebApplicationRequest,
+    BotApplicationRequest,
+    AcceptApplicationRequest,
+    RejectApplicationRequest,
+    ModifyApplicationRequest,
+    GetTokenRequest,
+    RefreshTokenRequest,
+    RevokeTokenRequest,
+};

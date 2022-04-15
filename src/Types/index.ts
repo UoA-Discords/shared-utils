@@ -1,6 +1,23 @@
 import APIResponse from './APIResponse';
-import * as Applications from './Applications';
-import * as Auth from './Auth';
+import {
+    WebApplicationRequest,
+    BotApplicationRequest,
+    AcceptApplicationRequest,
+    RejectApplicationRequest,
+    ModifyApplicationRequest,
+} from './Applications';
+import { GetTokenRequest, RefreshTokenRequest, RevokeTokenRequest } from './Auth';
 import RegisteredServer from './RegisteredServer';
 
-export { APIResponse, RegisteredServer, Applications, Auth };
+export {
+    APIResponse,
+    RegisteredServer,
+    WebApplicationRequest,
+    BotApplicationRequest,
+    AcceptApplicationRequest,
+    RejectApplicationRequest,
+    ModifyApplicationRequest,
+    GetTokenRequest,
+    RefreshTokenRequest,
+    RevokeTokenRequest,
+};

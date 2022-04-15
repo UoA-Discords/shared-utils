@@ -2,7 +2,7 @@ import { TagNames } from '../Data';
 import { User } from '../DiscordTypes';
 
 /** POST request body for sending "make application" requests from web. */
-export interface ApplyWebRequest {
+export interface WebApplicationRequest {
     /** Code for the invite, not the full URL. */
     inviteCode: string;
 
@@ -20,21 +20,21 @@ export interface ApplyWebRequest {
 }
 
 /** POST request body for sending "make application" requests from bots. */
-export interface ApplyBotRequest extends ApplyWebRequest {
+export interface BotApplicationRequest extends WebApplicationRequest {
     /** The {@link User Discord user} this bot is making the application on behalf of. */
     user: User;
 }
 
 /** POST request body for sending "accept application" requests. */
-export interface AcceptRequest {
+export interface AcceptApplicationRequest {
     access_token: string;
     guildId: string;
 }
 
 /** POST request body for sending "reject application" requests. */
-export type RejectRequest = AcceptRequest;
+export type RejectApplicationRequest = AcceptApplicationRequest;
 
 /** POST request body for sending "modify application" requests. */
-export interface ModifyRequest extends AcceptRequest {
+export interface ModifyApplicationRequest extends AcceptApplicationRequest {
     tags: TagNames[];
 }
