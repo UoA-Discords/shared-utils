@@ -16,3 +16,5 @@ export enum GETRoutes {
     GetApplications = `/applications`,
     GetServers = `/servers`,
 }
+
+export type CombinedRoutes = POSTApplicationRoutes | POSTAuthRoutes | GETRoutes;

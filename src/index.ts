@@ -31,7 +31,7 @@ import {
     RefreshTokenRequest,
     RevokeTokenRequest,
 } from './Types';
-import { POSTApplicationRoutes, POSTAuthRoutes, GETRoutes } from './Routes';
+import { POSTApplicationRoutes, POSTAuthRoutes, GETRoutes, CombinedRoutes } from './Routes';
 
 export {
     DiscordAPI,
@@ -64,4 +64,5 @@ export {
     POSTApplicationRoutes,
     POSTAuthRoutes,
     GETRoutes,
+    CombinedRoutes,
 };
