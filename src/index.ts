@@ -5,6 +5,7 @@ import {
     Developers,
     Verifiers,
     BlacklistedGuilds,
+    BlacklistedUsers,
     OptOutGuilds,
     GuildRequirements,
 } from './Data';
@@ -40,6 +41,7 @@ export {
     Developers,
     Verifiers,
     BlacklistedGuilds,
+    BlacklistedUsers,
     OptOutGuilds,
     GuildRequirements,
     AccessTokenResponse,
