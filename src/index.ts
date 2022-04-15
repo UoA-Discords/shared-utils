@@ -1,5 +1,5 @@
 import { DiscordAPI } from './APIs';
-import { Tags, TagNames, Developers, Verifiers, BlacklistedGuilds, OptOutGuilds } from './Data';
+import { TagDescriptionsMap, TagNames, Developers, Verifiers, BlacklistedGuilds, OptOutGuilds } from './Data';
 import {
     AccessTokenResponse,
     NSFWLevels,
@@ -14,7 +14,7 @@ import { APIResponse, PublicRegisteredGuild, WebApplicationRequest, BotApplicati
 
 export {
     DiscordAPI,
-    Tags,
+    TagDescriptionsMap,
     TagNames,
     Developers,
     Verifiers,
