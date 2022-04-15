@@ -2,6 +2,8 @@ import { TagNames } from '../Data';
 import { User } from '../DiscordTypes';
 
 export interface RegisteredServer {
+    /** Guild ID used for indexing. */
+    _id: string;
     inviteCode: string;
     tags: TagNames[];
     addedAt: number;
