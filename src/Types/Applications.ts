@@ -1,7 +1,7 @@
 import { TagNames } from '../Data';
 import { User } from '../DiscordTypes';
 
-/** POST request body for sending application requests. */
+/** POST request body for sending "make application" requests from web. */
 export interface ApplyWebRequest {
     /** Code for the invite, not the full URL. */
     inviteCode: string;
@@ -19,8 +19,22 @@ export interface ApplyWebRequest {
     dryRun?: boolean;
 }
 
-/** Guild registry applications submitted via a bot must have this in their request body. */
+/** POST request body for sending "make application" requests from bots. */
 export interface ApplyBotRequest extends ApplyWebRequest {
-    /** The user this bot is making the application on behalf of. */
+    /** The {@link User Discord user} this bot is making the application on behalf of. */
     user: User;
+}
+
+/** POST request body for sending "accept application" requests. */
+export interface AcceptRequest {
+    access_token: string;
+    guildId: string;
+}
+
+/** POST request body for sending "reject application" requests. */
+export type RejectRequest = AcceptRequest;
+
+/** POST request body for sending "modify application" requests. */
+export interface ModifyRequest extends AcceptRequest {
+    tags: TagNames[];
 }

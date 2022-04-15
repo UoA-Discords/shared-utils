@@ -18,7 +18,7 @@ export default abstract class DiscordAPI {
             );
 
             if (status !== 200) {
-                console.warn(`Got status code ${status} trying to get invite data with messge: ${statusText}`, data);
+                console.warn(`Got status code ${status} trying to get invite data with message: ${statusText}`, data);
             }
 
             return { success: true, data };

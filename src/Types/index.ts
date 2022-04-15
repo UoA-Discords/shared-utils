@@ -1,5 +1,6 @@
 import APIResponse from './APIResponse';
 import * as Applications from './Applications';
-import PublicRegisteredGuild from './RegisteredGuild';
+import * as Auth from './Auth';
+import RegisteredServer from './RegisteredServer';
 
-export { APIResponse, PublicRegisteredGuild, Applications };
+export { APIResponse, RegisteredServer, Applications, Auth };
