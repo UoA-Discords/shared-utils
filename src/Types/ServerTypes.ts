@@ -1,7 +1,7 @@
 import { TagNames } from '../Data';
 import { User } from '../DiscordTypes';
 
-export default interface RegisteredServer {
+export interface RegisteredServer {
     inviteCode: string;
     tags: TagNames[];
     addedAt: number;
@@ -20,3 +20,5 @@ export default interface RegisteredServer {
      */
     memberCountHistory: number[];
 }
+
+export type ApplicationServer = Omit<RegisteredServer, `approvedBy` | `approvedAt` | `memberCountHistory`>;

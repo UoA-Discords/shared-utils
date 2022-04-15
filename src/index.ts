@@ -21,6 +21,7 @@ import {
 import {
     APIResponse,
     RegisteredServer,
+    ApplicationServer,
     WebApplicationRequest,
     BotApplicationRequest,
     AcceptApplicationRequest,
@@ -50,6 +51,7 @@ export {
     User,
     APIResponse,
     RegisteredServer,
+    ApplicationServer,
     WebApplicationRequest,
     BotApplicationRequest,
     AcceptApplicationRequest,

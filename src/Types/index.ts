@@ -7,11 +7,12 @@ import {
     ModifyApplicationRequest,
 } from './Applications';
 import { GetTokenRequest, RefreshTokenRequest, RevokeTokenRequest } from './Auth';
-import RegisteredServer from './RegisteredServer';
+import { RegisteredServer, ApplicationServer } from './ServerTypes';
 
 export {
     APIResponse,
     RegisteredServer,
+    ApplicationServer,
     WebApplicationRequest,
     BotApplicationRequest,
     AcceptApplicationRequest,
