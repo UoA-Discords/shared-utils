@@ -15,7 +15,7 @@ export interface WebApplicationRequest {
 
     tags: TagNames[];
 
-    /** If false, will not actually add the application. */
+    /** If true, will not actually add the application. */
     dryRun?: boolean;
 }
 
