@@ -1,6 +1,6 @@
 {
     "name": "@uoa-discords/shared-utils",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Shared utility functions and types for the UoA Discords repositories.",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
