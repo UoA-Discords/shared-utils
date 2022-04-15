@@ -1,5 +1,13 @@
 import { DiscordAPI } from './APIs';
-import { TagDescriptionsMap, TagNames, Developers, Verifiers, BlacklistedGuilds, OptOutGuilds } from './Data';
+import {
+    TagDescriptionsMap,
+    TagNames,
+    Developers,
+    Verifiers,
+    BlacklistedGuilds,
+    OptOutGuilds,
+    GuildRequirements,
+} from './Data';
 import {
     AccessTokenResponse,
     NSFWLevels,
@@ -31,6 +39,7 @@ export {
     Verifiers,
     BlacklistedGuilds,
     OptOutGuilds,
+    GuildRequirements,
     AccessTokenResponse,
     NSFWLevels,
     VerificationLevels,
