@@ -4,7 +4,7 @@ import { User } from '../DiscordTypes';
 export default interface RegisteredServer {
     inviteCode: string;
     tags: TagNames[];
-    appliedAt: number;
+    addedAt: number;
     addedBy: User;
     approvedBy: User;
     approvedAt: number;
