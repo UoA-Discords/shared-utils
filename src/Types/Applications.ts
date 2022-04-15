@@ -1,7 +1,8 @@
 import { TagNames } from '../Data';
 import { User } from '../DiscordTypes';
 
-export interface WebApplicationRequest {
+/** POST request body for sending application requests. */
+export interface ApplyWebRequest {
     /** Code for the invite, not the full URL. */
     inviteCode: string;
 
@@ -19,7 +20,7 @@ export interface WebApplicationRequest {
 }
 
 /** Guild registry applications submitted via a bot must have this in their request body. */
-export interface BotApplicationRequest extends WebApplicationRequest {
+export interface ApplyBotRequest extends ApplyWebRequest {
     /** The user this bot is making the application on behalf of. */
     user: User;
 }
