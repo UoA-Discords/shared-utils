@@ -10,7 +10,7 @@ import {
     Invite,
     User,
 } from './DiscordTypes';
-import { APIResponse, PublicRegisteredGuild, WebApplication, BotApplication } from './Types';
+import { APIResponse, PublicRegisteredGuild, WebApplicationRequest, BotApplicationRequest } from './Types';
 
 export {
     DiscordAPI,
@@ -30,6 +30,6 @@ export {
     User,
     APIResponse,
     PublicRegisteredGuild,
-    WebApplication,
-    BotApplication,
+    WebApplicationRequest,
+    BotApplicationRequest,
 };
