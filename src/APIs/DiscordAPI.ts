@@ -5,7 +5,7 @@ import APIResponse from '../Types/APIResponse';
 /** Handles making calls to the Discord API for both client and server. */
 export default abstract class DiscordAPI {
     private static readonly _discord: AxiosInstance = axios.create({
-        baseURL: `https://discord.com/api`,
+        baseURL: `https://discord.com/api/v9`,
         headers: {
             'Content-Type': `application/json`,
         },
