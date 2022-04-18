@@ -1,5 +1,5 @@
 import { TagNames } from '../Data';
-import { User } from '../DiscordTypes';
+import { Invite, User } from '../DiscordTypes';
 
 export interface RegisteredServer {
     /** Guild ID used for indexing. */
@@ -21,6 +21,10 @@ export interface RegisteredServer {
      * when the server was registered to the UoA Discords website.
      */
     memberCountHistory: number[];
+}
+
+export interface ServerWithInviteInfo extends RegisteredServer {
+    invite: Invite;
 }
 
 export type ApplicationServer = Omit<RegisteredServer, `approvedBy` | `approvedAt` | `memberCountHistory`>;
