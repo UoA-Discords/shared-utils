@@ -13,7 +13,7 @@ export default interface User {
     username: string;
 
     /** Avatar hash. */
-    avatar: string;
+    avatar: string | null;
 
     /** @see {@link https://discord.com/developers/docs/resources/user#user-object-user-flags} */
     public_flags: number;
