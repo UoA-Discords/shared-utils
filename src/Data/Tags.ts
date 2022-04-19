@@ -16,6 +16,7 @@ export enum TagNames {
 /** Maps tag names to their description. */
 export const TagDescriptionsMap: Record<TagNames, string> = {
     [TagNames.Arts]: `Faculty of Arts`,
+
     [TagNames.Business]: `Business School`,
 
     [TagNames.CreativeArts]: `Faculty of Creative Arts and Industries`,
