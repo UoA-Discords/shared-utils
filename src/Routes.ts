@@ -15,6 +15,7 @@ export enum POSTAuthRoutes {
 export enum GETRoutes {
     GetApplications = `/applications`,
     GetServers = `/servers`,
+    GetUser = `/users`,
 }
 
 export enum POSTServerRoutes {
