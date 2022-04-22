@@ -30,4 +30,7 @@ export interface ServerWithInviteInfo extends RegisteredServer {
     invite: Invite;
 }
 
-export type ApplicationServer = Omit<RegisteredServer, `approvedBy` | `approvedAt` | `memberCountHistory`>;
+export type ApplicationServer = Omit<
+    RegisteredServer,
+    `approvedBy` | `approvedAt` | `memberCountHistory` | `likes` | `dislikes`
+>;
