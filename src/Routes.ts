@@ -17,4 +17,9 @@ export enum GETRoutes {
     GetServers = `/servers`,
 }
 
-export type CombinedRoutes = POSTApplicationRoutes | POSTAuthRoutes | GETRoutes;
+export enum POSTServerRoutes {
+    Like = `/servers/like`,
+    Dislike = `/servers/dislike`,
+}
+
+export type CombinedRoutes = POSTApplicationRoutes | POSTAuthRoutes | GETRoutes | POSTServerRoutes;
