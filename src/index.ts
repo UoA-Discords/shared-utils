@@ -32,6 +32,7 @@ import {
     GetTokenRequest,
     RefreshTokenRequest,
     RevokeTokenRequest,
+    WebsiteUser,
 } from './Types';
 import { POSTApplicationRoutes, POSTAuthRoutes, GETRoutes, CombinedRoutes } from './Routes';
 
@@ -65,6 +66,7 @@ export {
     GetTokenRequest,
     RefreshTokenRequest,
     RevokeTokenRequest,
+    WebsiteUser,
     POSTApplicationRoutes,
     POSTAuthRoutes,
     GETRoutes,
