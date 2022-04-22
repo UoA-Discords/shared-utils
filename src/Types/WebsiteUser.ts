@@ -3,3 +3,10 @@ export default interface WebsiteUser {
     _id: string;
     guildsLiked: string[];
 }
+
+export interface AddLikeRequest {
+    access_token: string;
+    guildId: string;
+}
+
+export type RemoveLikeRequest = AddLikeRequest;

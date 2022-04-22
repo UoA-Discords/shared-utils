@@ -18,8 +18,13 @@ export enum GETRoutes {
     GetUserLikes = `/users/:id/likes`,
 }
 
+export enum POSTUserRoutes {
+    AddLike = `/users/addLike`,
+    RemoveLike = `/users/removeLike`,
+}
+
 export enum POSTServerRoutes {
     Like = `/servers/like`,
 }
 
-export type CombinedRoutes = POSTApplicationRoutes | POSTAuthRoutes | GETRoutes | POSTServerRoutes;
+export type CombinedRoutes = POSTApplicationRoutes | POSTAuthRoutes | GETRoutes | POSTUserRoutes | POSTServerRoutes;
