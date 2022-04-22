@@ -9,7 +9,7 @@ import {
 import { GetTokenRequest, RefreshTokenRequest, RevokeTokenRequest } from './Auth';
 import { RegisteredServer, ServerWithInviteInfo, ApplicationServer } from './ServerTypes';
 import WebsiteUser from './WebsiteUser';
-import { LikeServerRequest, DislikeServerRequest } from './Servers';
+import { LikeServerRequest } from './Servers';
 
 export {
     APIResponse,
@@ -26,5 +26,4 @@ export {
     RevokeTokenRequest,
     WebsiteUser,
     LikeServerRequest,
-    DislikeServerRequest,
 };

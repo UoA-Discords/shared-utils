@@ -34,7 +34,6 @@ import {
     RevokeTokenRequest,
     WebsiteUser,
     LikeServerRequest,
-    DislikeServerRequest,
 } from './Types';
 import { POSTApplicationRoutes, POSTAuthRoutes, GETRoutes, POSTServerRoutes, CombinedRoutes } from './Routes';
 
@@ -75,5 +74,4 @@ export {
     POSTServerRoutes,
     CombinedRoutes,
     LikeServerRequest,
-    DislikeServerRequest,
 };

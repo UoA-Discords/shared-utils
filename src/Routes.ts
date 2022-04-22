@@ -19,7 +19,6 @@ export enum GETRoutes {
 
 export enum POSTServerRoutes {
     Like = `/servers/like`,
-    Dislike = `/servers/dislike`,
 }
 
 export type CombinedRoutes = POSTApplicationRoutes | POSTAuthRoutes | GETRoutes | POSTServerRoutes;

@@ -23,14 +23,10 @@ export interface RegisteredServer {
     memberCountHistory: number[];
 
     likes: number;
-    dislikes: number;
 }
 
 export interface ServerWithInviteInfo extends RegisteredServer {
     invite: Invite;
 }
 
-export type ApplicationServer = Omit<
-    RegisteredServer,
-    `approvedBy` | `approvedAt` | `memberCountHistory` | `likes` | `dislikes`
->;
+export type ApplicationServer = Omit<RegisteredServer, `approvedBy` | `approvedAt` | `memberCountHistory` | `likes`>;
