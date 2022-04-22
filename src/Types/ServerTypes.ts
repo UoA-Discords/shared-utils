@@ -21,6 +21,9 @@ export interface RegisteredServer {
      * when the server was registered to the UoA Discords website.
      */
     memberCountHistory: number[];
+
+    likes: number;
+    dislikes: number;
 }
 
 export interface ServerWithInviteInfo extends RegisteredServer {
